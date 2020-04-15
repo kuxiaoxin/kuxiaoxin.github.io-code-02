@@ -1,15 +1,18 @@
 <template>
   <div>
+    <breadcrumb-route></breadcrumb-route>
     <empty-div title="图书馆"></empty-div>
   </div>
 </template>
 
 <script>
+  import BreadcrumbRoute from "@/components/BreadcrumbRoute"
   import EmptyDiv from "@/components/EmptyDiv"
 
   export default {
     name: "Book",
     components: {
+      BreadcrumbRoute,
       EmptyDiv
     }
   }

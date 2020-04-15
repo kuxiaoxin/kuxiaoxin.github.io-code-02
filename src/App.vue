@@ -38,6 +38,12 @@
   </div>
 </template>
 
+<script>
+  export default {
+    name: 'App'
+  }
+</script>
+
 <style>
   #nav a {
     color: #2c3e50;
