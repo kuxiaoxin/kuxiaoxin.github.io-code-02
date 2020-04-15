@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <b-navbar id="nav-box"
+              class="nav-box"
               toggleable="lg"
-              fixed="top"
-              style="border-bottom: 1px solid rgba(30,35,42,.06);">
+              fixed="top">
       <b-navbar-brand href="#">
-        <img src="./assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="./assets/image/logo/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         三国趣闻
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -78,8 +78,13 @@
 </script>
 
 <style>
+  .nav-box {
+    border-bottom: 1px solid rgba(30, 35, 42, .06);
+    transition: background .6s ease-in-out, padding .6s ease-in-out;
+  }
+
   #nav a {
-    color: #2c3e50;
+    color: white;
     text-align: center;
   }
 
