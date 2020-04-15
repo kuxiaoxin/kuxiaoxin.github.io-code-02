@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <b-navbar toggleable="lg"
-              type="light"
-              variant="light"
-              fixed="top">
+    <b-navbar id="nav-box"
+              toggleable="lg"
+              fixed="top"
+              style="border-bottom: 1px solid rgba(30,35,42,.06);">
       <b-navbar-brand href="#">
         <img src="./assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         三国趣闻
@@ -17,13 +17,31 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <div style="margin-top: 56px;">
+    <div id="content">
       <router-view/>
     </div>
   </div>
 </template>
 
 <script>
+  import $ from 'jquery'
+
+  function scroll() {
+    //获取导航栏变色的位置距顶部的高度
+    let top = $("#content").offset().top
+    //获取当前窗口距顶部的高度
+    let scrollTop = $(window).scrollTop()
+    if (scrollTop - 10 <= top) {
+      $('#nav-box').css('background', 'none')
+    } else {
+      $('#nav-box').css('background', 'white')
+    }
+  }
+
+  $(window).on('scroll', function () {
+    scroll()
+  });
+
   export default {
     name: 'App',
     data() {
