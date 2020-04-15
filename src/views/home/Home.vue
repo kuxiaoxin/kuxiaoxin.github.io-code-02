@@ -1,19 +1,15 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <empty-div></empty-div>
+    <empty-div title="首页"></empty-div>
   </div>
 </template>
 
 <script>
-    import EmptyDiv from "@/components/EmptyDiv";
-    import HelloWorld from '@/components/HelloWorld.vue'
+    import EmptyDiv from "@/components/EmptyDiv"
 
     export default {
         name: 'Home',
         components: {
-            HelloWorld,
             EmptyDiv
         }
     }

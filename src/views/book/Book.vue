@@ -1,10 +1,16 @@
 <template>
-  <div>Hello</div>
+  <div>
+    <empty-div title="图书馆"></empty-div>
+  </div>
 </template>
 
 <script>
+    import EmptyDiv from "@/components/EmptyDiv"
     export default {
-        name: "Book"
+        name: "Book",
+        components: {
+            EmptyDiv
+        }
     }
 </script>
 
