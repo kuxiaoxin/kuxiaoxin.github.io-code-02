@@ -11,23 +11,8 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav id="nav" class="ml-auto">
-          <b-nav-item>
-            <router-link to="/">首页</router-link>
-          </b-nav-item>
-          <b-nav-item>
-            <router-link to="/hero">论英雄</router-link>
-          </b-nav-item>
-          <b-nav-item>
-            <router-link to="/think">锦囊</router-link>
-          </b-nav-item>
-          <b-nav-item>
-            <router-link to="/trickery">权谋</router-link>
-          </b-nav-item>
-          <b-nav-item>
-            <router-link to="/book">《三国演义》</router-link>
-          </b-nav-item>
-          <b-nav-item>
-            <router-link to="/about">关于</router-link>
+          <b-nav-item v-for="(item, index) in routeList" :key="index">
+            <router-link :to="item.path">{{item.name}}</router-link>
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -40,7 +25,37 @@
 
 <script>
   export default {
-    name: 'App'
+    name: 'App',
+    data() {
+      return {
+        routeList: [
+          {
+            path: '/',
+            name: '首页'
+          },
+          {
+            path: '/hero',
+            name: '论英雄'
+          },
+          {
+            path: '/think',
+            name: '锦囊'
+          },
+          {
+            path: '/trickery',
+            name: '权谋'
+          },
+          {
+            path: '/book',
+            name: '《三国演义》'
+          },
+          {
+            path: '/about',
+            name: '关于'
+          }
+        ]
+      }
+    }
   }
 </script>
 
