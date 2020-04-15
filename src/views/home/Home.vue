@@ -5,12 +5,12 @@
 </template>
 
 <script>
-    import EmptyDiv from "@/components/EmptyDiv"
+  import EmptyDiv from "@/components/EmptyDiv"
 
-    export default {
-        name: 'Home',
-        components: {
-            EmptyDiv
-        }
+  export default {
+    name: 'Home',
+    components: {
+      EmptyDiv
     }
+  }
 </script>

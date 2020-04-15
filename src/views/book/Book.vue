@@ -5,13 +5,14 @@
 </template>
 
 <script>
-    import EmptyDiv from "@/components/EmptyDiv"
-    export default {
-        name: "Book",
-        components: {
-            EmptyDiv
-        }
+  import EmptyDiv from "@/components/EmptyDiv"
+
+  export default {
+    name: "Book",
+    components: {
+      EmptyDiv
     }
+  }
 </script>
 
 <style scoped>

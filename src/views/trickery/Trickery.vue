@@ -5,13 +5,14 @@
 </template>
 
 <script>
-    import EmptyDiv from "@/components/EmptyDiv"
-    export default {
-        name: "Trickery",
-        components: {
-            EmptyDiv
-        }
+  import EmptyDiv from "@/components/EmptyDiv"
+
+  export default {
+    name: "Trickery",
+    components: {
+      EmptyDiv
     }
+  }
 </script>
 
 <style scoped>

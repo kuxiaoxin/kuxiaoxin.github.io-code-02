@@ -8,22 +8,22 @@
 </template>
 
 <script>
-    import EmptyDiv from "@/components/EmptyDiv"
-    import { WOW } from 'wowjs'
+  import EmptyDiv from "@/components/EmptyDiv"
+  import { WOW } from 'wowjs'
 
-    export default {
-        name: 'About',
-        components: {
-            EmptyDiv
-        },
-        mounted() {
-            let wow = new WOW({
-                boxClass: 'wow',
-                animateClass: 'animated',
-                offset: 0,
-                mobile: true
-            })
-            wow.init();
-        }
+  export default {
+    name: 'About',
+    components: {
+      EmptyDiv
+    },
+    mounted() {
+      let wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true
+      })
+      wow.init();
     }
+  }
 </script>

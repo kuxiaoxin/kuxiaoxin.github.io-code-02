@@ -23,19 +23,19 @@
 </template>
 
 <script>
-    export default {
-        name: "EmptyDiv",
-        props: {
-            title: {
-                type: String,
-                required: true
-            },
-            times: {
-                type: Number,
-                default: 20
-            }
-        }
+  export default {
+    name: "EmptyDiv",
+    props: {
+      title: {
+        type: String,
+        required: true
+      },
+      times: {
+        type: Number,
+        default: 20
+      }
     }
+  }
 </script>
 
 <style scoped>
