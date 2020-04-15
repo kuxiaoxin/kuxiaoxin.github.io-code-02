@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import {WOW} from 'wowjs'
+    import { WOW } from 'wowjs'
 
     export default {
         name: 'About',
